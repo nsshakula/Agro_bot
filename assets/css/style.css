@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Roboto-Black";
+  src: url(../fonts/Roboto-Black.woff) format("woff"),
+    url(../fonts/Roboto-Black.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Black";
+  src: url(../fonts/SF-Pro-Display-Black.woff) format("woff"),
+    url(../fonts/SF-Pro-Display-Black.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Bold";
+  src: url(../fonts/SF-Pro-Display-Bold.woff) format("woff"),
+    url(../fonts/SF-Pro-Display-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Heavy";
+  src: url(../fonts/SF-Pro-Display-Heavy.woff) format("woff"),
+    url(../fonts/SF-Pro-Display-Heavy.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Medium";
+  src: url(../fonts/SF-Pro-Display-Medium.woff) format("woff"),
+    url(../fonts/SF-Pro-Display-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Regular";
+  src: url(../fonts/SF-Pro-Display-Regular.woff) format("woff"),
+    url(../fonts/SF-Pro-Display-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Semibold";
+  src: url(../fonts/SF-Pro-Display-Semibold.woff) format("woff"),
+    url(../fonts/SF-Pro-Display-Semibold.woff2) format("woff2");
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+/*Блок 1. header START*/
+
+/*Блок 1. header END*/
+
+/*Блок 2. AGROBOT (титульная) START*/
+
+/*Блок 2. AGROBOT (титульная) END*/
+
+/*Блок 3. Товары и услуги START*/
+
+/*Блок 3. Товары и услуги END*/
+
+/*Блок 4.  Как с нами работать START*/
+
+/*Блок 4.  Как с нами работать END*/
+
+/*Блок 5. Кредитование START*/
+
+/*Блок 5. Кредитование END*/
+
+/*Блок 6. Наши партнеры START*/
+
+/*Блок 6. Наши партнеры END*/
+
+/*Блок 7. Обратная связь START*/
+
+/*Блок 7. Обратная связь END*/
+
+/*Блок 8. footer START*/
+
+/*Блок 8. footer END*/
