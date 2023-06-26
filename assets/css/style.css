@@ -69,14 +69,18 @@ h6 {
 }
 
 .wrapper {
-  display: grid;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: block;
+  margin: 0 auto;
+  /*display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   grid-template-areas:
     "header header header"
     "main main main"
-    "footer footer footer";
+    "footer footer footer";*/
 }
 
 /*Блок 1. header START*/
@@ -92,6 +96,47 @@ h6 {
 /*Блок 3. Товары и услуги END*/
 
 /*Блок 4.  Как с нами работать START*/
+
+.business-process {
+}
+.business-process__body {
+  background: url(../image/business-process_background.png) no-repeat;
+  height: 100vh;
+}
+.business-process__title {
+}
+.business-process__content {
+  width: calc(100% - 355px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20%;
+}
+.business-process__item {
+}
+.item {
+}
+.item__row {
+  display: flex;
+  align-items: center;
+}
+.item__number {
+}
+.item__body {
+}
+.item__subtitle {
+  font-family: "SF-Pro-Display-Bold";
+  font-size: 24px;
+  line-height: 26px;
+  color: #4f4f4f;
+}
+.item__text {
+  font-family: "SF-Pro-Display-Regular";
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(130, 130, 130, 1);
+  padding-top: 12px;
+}
 
 /*Блок 4.  Как с нами работать END*/
 
