@@ -69,22 +69,155 @@ h6 {
 }
 
 .wrapper {
-  display: grid;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: block;
+  margin: 0 auto;
+  /* display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   grid-template-areas:
     "header header header"
     "main main main"
-    "footer footer footer";
+    "footer footer footer"; */
 }
+
+/* Стиль кнопки, можете отсюда брать и вставлять в свои секции + не забудьте hover START*/
+/* .btn {
+  width: 200px;
+  height: 48px;
+  border-radius: 500px;
+  border: none;
+  background: var(--2, linear-gradient(135deg, #48B760 0%, #6BB748 100%));
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'SF-Pro-Display-Regular';
+  font-weight: 800;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer; 
+}
+.btn:hover {
+  box-shadow: 3px 3px 20px #48B760;
+  border: none;
+  transition: 0.5s all;
+} */
+/* стиль кнопки END */
+
+/* Стиль подзаголовка START*/
+/* h2 {
+  color: var(--gray-2, #4F4F4F);
+  font-size: 96px;
+  font-family: SF-Pro-Display-Heavy;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.title-block{
+  margin-left: 38px;
+
+}
+.title-block__icon{
+  transform: translate(-35px, 132px);
+} */
+/* Стиль подзаголовка END*/
 
 /*Блок 1. header START*/
 
 /*Блок 1. header END*/
 
 /*Блок 2. AGROBOT (титульная) START*/
+.page-title{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.page-title__wrapper{
+  width: 624px;
+}
+.btn {
+  width: 200px;
+  height: 48px;
+  border-radius: 500px;
+  border: none;
+  background: var(--2, linear-gradient(135deg, #48B760 0%, #6BB748 100%));
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'SF-Pro-Display-Regular';
+  font-weight: 800;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer; 
+}
+.btn:hover {
+  box-shadow: 3px 3px 20px #48B760;
+  border: none;
+  transition: 0.5s all;
+}
+.page-title__header{
+  margin: 0;
+  margin-top: 185px;
+  font-size: 135px;
+  font-family: 'Roboto-Black';
+  font-weight: 900;
+  line-height: 144px;
+  text-transform: uppercase;
+  color:  #48B760;
+}
+span {
+  color: #4F4F4F;
+}
+.page-title__descr{
+  color: var(--gray-4, #BDBDBD);
+  font-size: 18px;
+  font-family: 'SF-Pro-Display-Regular';
+  font-weight: 500;
+  line-height: 18px;
+}
+.page-title__text{
+  margin-top: 20px;
+  margin-bottom: 29px;
+  color: var(--gray-3, #828282);
+  font-size: 14px;
+  font-family: 'SF-Pro-Display-Regular';
+  line-height: 18px;
+  width: 319px;
+}
+.page-title__images{
+  grid-column-start: 2;
+  display: flex;
+  align-items: flex-end;
+}
+.page-title__icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+.page-title__item{
+  margin-bottom: 20px;
+  color: var(--gray-3, #828282);
+  text-align: center;
+  font-size: 18px;
+  font-family: 'SF-Pro-Display-Regular';
+  font-weight: 500;
+  line-height: 18px;
+}
 
+.page-title__bot{
+  margin-top: 159px;
+  display: flex;
+  align-items: center;
+}
+
+.page-title__bot-text{
+  margin-left: 20px;
+  color: var(--gray-4, #BDBDBD);
+  font-size: 14px;
+  font-family: 'SF-Pro-Display-Regular';
+  line-height: 18px;
+}
 /*Блок 2. AGROBOT (титульная) END*/
 
 /*Блок 3. Товары и услуги START*/
