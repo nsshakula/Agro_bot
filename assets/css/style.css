@@ -68,20 +68,20 @@ h6 {
   font-size: inherit;
 }
 
-.wrapper {
+/*.wrapper {
   padding-left: 50px;
   padding-right: 50px;
   display: block;
   margin: 0 auto;
-  /* display: grid;
+  display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   grid-template-areas:
     "header header header"
     "main main main"
-    "footer footer footer"; */
-}
+    "footer footer footer"; 
+}*/
 
 /* Стиль кнопки, можете отсюда брать и вставлять в свои секции + не забудьте hover START*/
 /* .btn {
@@ -227,7 +227,17 @@ span {
 /*Блок 4.  Как с нами работать START*/
 
 .business-process__body {
-  background: url(../image/business-process_background.png) no-repeat;
+  background-image: url(../image/business-process_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 100px 50px 80px;
+}
+
+.business-process__title-block {
+  height: 130px;
+  margin-left: 36px;
 }
 
 .business-process__title {
@@ -236,21 +246,35 @@ span {
   line-height: 110px;
   color: rgba(79, 79, 79, 1);
   text-transform: uppercase;
-  padding-top: 100px;
+}
+
+.business-process__icon-logo {
+  transform: translate(-35px, -18px);
 }
 
 .business-process__content {
-  height: 430px;
-  column-gap: 234px;
+  height: auto;
   width: calc(100% - 355px);
-  margin: 60px auto 72px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  margin: 40px auto 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.business-process__col {
+  width: 422px;
+}
+
+.business-process__item {
+  padding-bottom: 50px;
 }
 
 .item__row {
   display: flex;
   align-items: center;
+}
+
+.item__number {
+  height: 110px;
 }
 
 .item__subtitle {
@@ -275,7 +299,7 @@ span {
   height: 48px;
   border-radius: 500px;
   border: none;
-  background: var(--2, linear-gradient(135deg, #48b760 0%, #6bb748 100%));
+  background: linear-gradient(135deg, #48b760 0%, #6bb748 100%);
   color: #fff;
   text-align: center;
   font-size: 14px;
