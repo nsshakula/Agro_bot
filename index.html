@@ -47,7 +47,7 @@
                 Мы создали удобный и бесплатный инструмент поиска выгодных
                 предложений на товары для нужд вашего сельхозпредприятия
               </p>
-              <button class="btn">свяжитесь с нами</button>
+              <button data-modal="thanks" class="btn">свяжитесь с нами</button>
 
               <div class="page-title__bot">
                 <img
@@ -365,5 +365,17 @@
         </div>
       </footer>
     </div>
+    
+    <!-- Модальное окно -->
+    <div class="overlay">
+      <div class="modal" id="thanks">
+        <div class="modal_close">&times;</div>
+        <div class="modal__descr">Спасибо, мы с вами свяжемся!</div>
+      </div>
+    </div>
+  </div>
+  <!-- Модальное окно -->
+  <script src="assets/js/jquery-3.7.0.min.js"></script>
+  <script src="assets/js/script.js"></script>
   </body>
 </html>
