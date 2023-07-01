@@ -68,7 +68,7 @@ h6 {
   font-size: inherit;
 }
 
-/*.wrapper {
+/* .wrapper {
   padding-left: 50px;
   padding-right: 50px;
   display: block;
@@ -80,8 +80,8 @@ h6 {
   grid-template-areas:
     "header header header"
     "main main main"
-    "footer footer footer"; 
-}*/
+    "footer footer footer";
+} */
 
 /* Стиль кнопки, можете отсюда брать и вставлять в свои секции + не забудьте hover START*/
 /* .btn {
@@ -124,7 +124,90 @@ h6 {
 /* Стиль подзаголовка END*/
 
 /*Блок 1. header START*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 1340px;
+  height: 80px;
+}
 
+.nav__list {
+  display: flex;
+  margin-top: 40px;
+}
+
+.nav__item {
+  list-style-type: none;
+  margin-right: 50px;
+  padding-top: 20px;
+  cursor: pointer;
+
+  color: var(--gray-3, #828282);
+  font-size: 14px;
+  font-family: SF Pro Display;
+  line-height: 18px;
+}
+.nav__item:hover{
+  text-decoration:underline;
+}
+.logo{
+  display: flex;
+  width: 162px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 35px;
+}
+
+.btn_header {
+  width: 200px;
+  height: 48px;
+  border-radius: 500px;
+  border: none;
+  background: var(--2, linear-gradient(135deg, #48b760 0%, #6bb748 100%));
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-family: "SF-Pro-Display-Regular";
+  font-weight: 800;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btn_header:hover {
+  box-shadow: 3px 3px 20px #48b760;
+  border: none;
+  transition: 0.5s all;
+}
+.header_buttons
+{
+  position:absolute;
+  padding-left: 1170px;
+  padding-top:36px;
+  z-index:-1;
+}
+.btn2_header
+{
+  width: 164px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 22px 22px;
+  background: #4B6350;
+  cursor: pointer;
+  color: #FFF;
+  text-align:center;
+  font-size: 14px;
+  font-family: SF Pro Display;
+  line-height: 18px;
+}
+.btn2_header:hover
+{
+  box-shadow: 3px 3px 25px #719377;
+  border: none;
+  transition: 0.5s all;
+}
 /*Блок 1. header END*/
 
 /*Блок 2. AGROBOT (титульная) START*/
@@ -228,7 +311,46 @@ span {
 /*Блок 2. AGROBOT (титульная) END*/
 
 /*Блок 3. Товары и услуги START*/
+.goods_and_services
+{
+  background-image: url(../image/business-process_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 100px 50px 80px;
+}
+.goods__title
+{
+  color: var(--gray-2, #4f4f4f);
+  font-size: 96px;
+  font-family: "SF-Pro-Display-Heavy";
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.goods_and_services-block
+{
+  margin-left: 38px;
+}
+.goods_and_services-icon
+{
+  transform: translate(-35px, 132px);
+}
+.goods_text
+{
+  display: flex;
+  width: 1340px;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding-top: 30px;
 
+  color: rgba(130, 130, 130, 1);
+  font-size: 18px;
+  font-family: "SF-Pro-Display-Regular";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
 /*Блок 3. Товары и услуги END*/
 
 /*Блок 4.  Как с нами работать START*/
@@ -322,7 +444,54 @@ span {
   border: none;
   transition: 0.5s all;
 }
+.goods__items
+{
+  display:grid;
+  grid-template-rows: Auto-fill;
+  justify-content: space-between;
+  margin-top:50px;
+}
 
+.goods__grid-elem-1
+{
+  grid-row:1/4;
+  width: 315px;
+  height: 372px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+}
+.goods__grid-elem-2
+{
+  grid-row:2/4;
+  width: 315px;
+  height: 372px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+}
+.goods__grid-elem-3
+{
+  grid-row:3/4;
+  width: 315px;
+  height: 372px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+}
+.goods__grid-elem-4
+{
+  grid-row:4/4;
+  width: 315px;
+  height: 372px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+}
 /*Блок 4.  Как с нами работать END*/
 
 /*Блок 5. Кредитование START*/
@@ -360,7 +529,8 @@ span {
   font-weight: 900;
   text-transform: uppercase;
 }
-.crediting__title-icon {
+
+.crediting__title-icon{
   transform: translate(-35px, 132px);
 }
 .crediting__descr {
@@ -560,4 +730,146 @@ span {
 
 /*Блок 8. footer START*/
 
+.nav__item_selected {
+	color: var(--gray-4, #bdbdbd);
+}
+
+.nav__item1:hover {
+	text-decoration: underline;
+}
+.background_footer {
+	width: 1350px;
+	height: 330px;
+	flex-shrink: 0;
+	background: #4f4f4f;
+	z-index: -2;
+}
+.logo_footer {
+  display:flex;
+	margin-top: 70px;
+	margin-left: 45px;
+}
+.textFooter {
+  display:flex;
+  margin-top:80px;
+  margin-left:50px;
+	flex-direction: column;
+	justify-content: center;
+	flex-shrink: 0;
+
+	color: #828282;
+	font-size: 14px;
+	font-family: SF Pro Display;
+	line-height: 18px;
+}
+.name_agrobot1 {
+	font-weight: bolder;
+	color: #828282;
+	font-size: 14px;
+	font-family: SF Pro Display;
+	line-height: 18px;
+}
+.name_agrobot2 {
+	font-weight: bolder;
+	color: #a2a2a2;
+	font-size: 14px;
+	font-family: SF Pro Display;
+	line-height: 18px;
+}
+.nav_footer {
+  display: flex;
+  margin-left: 180px;
+  margin-top:30px;
+}
+.cardOfaSite {
+  display:flex;
+  margin-left: 180px;
+  margin-top:0px;
+	color: #fff;
+	font-size: 18px;
+	font-family: SF Pro Display;
+	font-weight: 500;
+	line-height: 18px;
+}
+.cardOfaSite:hover {
+	text-decoration: underline;
+}
+.footer__block {
+	padding-top: 50px;
+}
+
+.footer__media {
+	width: 168px;
+	display: flex;
+	justify-content: space-evenly;
+  margin-left: 300px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.social_media_text
+{
+  color: #FFF;
+  font-size: 18px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  margin-left: 302px;
+}
+
+.footer {
+  height: 322px;
+	display: flex;
+	background-color: #4f4f4f;
+	border: 2px solid black;
+}
+
 /*Блок 8. footer END*/
+/*Блок 8. footer END*/
+
+/*Блок 9. Модальное окно START*/
+  .overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .modal{
+    width: 315px;
+    min-height: 150px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    
+  }
+
+  .modal__descr{
+    color: var(--gray-3, #828282);
+    text-align: center;
+    font-size: 24px;
+    font-family: "SF-Pro-Display-Bold";
+    font-weight: 600;
+    line-height: 26px;
+
+  }
+  .modal_close{
+    color: #48B760;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    font-size: 50px;
+    line-height: 28px;
+    cursor: pointer;
+
+  }
+  #thanks{
+    display: none;
+  }
+/*Блок 9. Модальное окно END*/
