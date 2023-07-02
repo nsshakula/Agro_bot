@@ -8,6 +8,9 @@ $(document).ready(function(){
     $('.modal_close').on('click', function() {
         $('.overlay, #thanks').fadeOut('slow');
     });
+    $('.overlay').on('click', function() {
+        $('.overlay, #thanks').fadeOut('slow');
+    });
 
 });
 
