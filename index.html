@@ -270,7 +270,7 @@
                 </div>
               </div>
             </div>
-            <button class="business-process__btn">Свяжитесь с нами</button>
+            <button data-modal=thanks class="business-process__btn">Свяжитесь с нами</button>
           </div>
         </section>
         <!--Блок 5. Кредитование-->
@@ -342,7 +342,85 @@
         <!--Блок 6. Наши партнеры-->
         <section class="partners"></section>
         <!--Блок 7. Обратная связь-->
-        <section class="feedback"></section>
+        <section class="feedback">
+          <div class="feedback__body">
+            <div class="feedback__title-block">
+              <h2 class="feedback__title">Обратная связь</h2>
+              <img
+                class="feedback__icon-logo"
+                src="./assets/image/icon/title_logo.png"
+                alt="логотип"
+              />
+            </div>
+            <div class="feedback__container">
+              <form class="feedback__form" id="form">
+                <input
+                  class="input__field"
+                  type="text"
+                  placeholder="Имя*"
+                  name="userName"
+                  id="name"
+                  required
+                  autofocus
+                />
+                <input
+                  class="input__field"
+                  type="tel"
+                  placeholder="Номер телефона*"
+                  name="userPhone"
+                  id="phone"
+                  required
+                />
+                <input
+                  class="input__field"
+                  type="email"
+                  placeholder="Электронная почта*"
+                  name="userEmail"
+                  id="email"
+                  required
+                />
+                <textarea
+                  class="input__field input__field-textarea"
+                  placeholder="Введите сообщение"
+                  name="userComment"
+                  id="comment"
+                ></textarea>
+              </form>
+              <div class="feedback__map">
+                <iframe
+                  class="feedback__iframe"
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3Abb7fffd1282803eec26475cfd6ffe8de1d36ebdb2f6ad71cdb34bf4fd8cfb2e9&amp;source=constructor"
+                ></iframe>
+              </div>
+            </div>
+            <div class="feedback__button-wrapper">
+              <form class="feedback__checkbox">
+                <input type="checkbox" name="personal" id="personal" checked />
+                <label for="personal"
+                  >Я даю согласие на обработку своих
+                  <a href="#">персональных данных</a></label
+                >
+              </form>
+              <button
+                class="feedback__btn"
+                type="submit"
+                form="form"
+                value="Submit"
+              >
+                Отправить
+              </button>
+            </div>
+            <div class="feedback__bot">
+              <a href="#">
+                <img
+                  class="feedback__image"
+                  src="./assets/image/bot.png"
+                  alt="бот"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
       <!--Блок 8. footer-->
       <footer class="footer">
