@@ -343,6 +343,7 @@ span {
   flex-direction: column;
   flex-shrink: 0;
   padding-top: 30px;
+  padding-left:20px;
 
   color: rgba(130, 130, 130, 1);
   font-size: 18px;
@@ -350,6 +351,120 @@ span {
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
+}
+.goods__items
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  margin-left:20px;
+  margin-top:50px;
+}
+
+.goods__grid-elem-1
+{
+  width: 315px;
+  height: 372px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+}
+#goodsIcon
+{
+  margin-top: 40px;
+  margin-left:95px;
+}
+#semenaText
+{
+  margin-left:40px;
+  padding-top:40px;
+  width: 227px;
+  color: var(--gray-3, #828282);
+  text-align: center;
+  font-size: 24px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+#explainingString
+{
+  color: var(--gray-4, #BDBDBD);
+  text-align: center;
+  font-size: 14px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+#btn_goods
+{
+  width: 200px;
+  height: 48px;
+  border-radius: 500px;
+  border: none;
+  background: var(--2, linear-gradient(135deg, #48B760 0%, #6BB748 100%));
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'SF-Pro-Display-Regular';
+  font-weight: 800;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer; 
+  margin-left:55px;
+  margin-top: 30px;
+}
+#btn_goods:hover
+{
+  box-shadow: 3px 3px 20px #48B760;
+  border: none;
+  transition: 0.5s all;
+}
+.text_button
+{
+  font-weight: bolder;
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.goods__grid-elem-2
+{
+  width: 315px;
+  height: 372px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+}
+.agriculture
+{
+  margin-top: 40px;
+  margin-left:95px;
+}
+.goods__grid-elem-3
+{
+  width: 315px;
+  height: 372px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+}
+.goods__grid-elem-4
+{
+  width: 315px;
+  height: 372px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
 }
 /*Блок 3. Товары и услуги END*/
 
@@ -443,54 +558,6 @@ span {
   box-shadow: 3px 3px 20px #48b760;
   border: none;
   transition: 0.5s all;
-}
-.goods__items
-{
-  display:grid;
-  grid-template-rows: Auto-fill;
-  justify-content: space-between;
-  margin-top:50px;
-}
-
-.goods__grid-elem-1
-{
-  grid-row:1/4;
-  width: 315px;
-  height: 372px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  background: #FFF;
-  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
-}
-.goods__grid-elem-2
-{
-  grid-row:2/4;
-  width: 315px;
-  height: 372px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  background: #FFF;
-  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
-}
-.goods__grid-elem-3
-{
-  grid-row:3/4;
-  width: 315px;
-  height: 372px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  background: #FFF;
-  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
-}
-.goods__grid-elem-4
-{
-  grid-row:4/4;
-  width: 315px;
-  height: 372px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  background: #FFF;
-  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
 }
 /*Блок 4.  Как с нами работать END*/
 
