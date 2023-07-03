@@ -683,6 +683,46 @@ span {
 /*Блок 5. Кредитование END*/
 
 /*Блок 6. Наши партнеры START*/
+.partners__body {
+  padding: 100px 50px 0;
+}
+
+.partnersk__title-block {
+  height: 130px;
+  margin: 0 0 30px 36px;
+}
+
+.partners__title {
+  font-family: "SF-Pro-Display-Black";
+  font-size: 96px;
+  line-height: 110px;
+  color: rgba(79, 79, 79, 1);
+  text-transform: uppercase;
+}
+
+.partners__icon-logo {
+  transform: translate(-36px, -34px);
+}
+.partners_text
+{
+  display: flex;
+  width: 1340px;
+  flex-direction: row ;
+  flex-shrink: 0;
+  padding-top: 30px;
+  color: rgba(130, 130, 130, 1);
+  font-size: 18px;
+  font-family: "SF-Pro-Display-Regular";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+.containers_logo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  padding-top: 30px;
+}
 
 /*Блок 6. Наши партнеры END*/
 
