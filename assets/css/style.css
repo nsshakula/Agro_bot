@@ -185,7 +185,7 @@ h6 {
   font-family: SF Pro Display;
   line-height: 18px;
 }
-.btn2_header:hover {
+.btn2_header:hover{
   box-shadow: 3px 3px 25px #719377;
   border: none;
   transition: 0.5s all;
@@ -292,6 +292,69 @@ span {
   font-size: 14px;
   font-family: "SF-Pro-Display-Regular";
   line-height: 18px;
+}
+
+@media (max-width: 768px) {
+
+}
+@media only screen and (max-width: 576px) {
+  /* Ваши стили для мобильных устройств */
+  .page-title {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page-title__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .page-title__wrapper {
+    width: 100%;
+  }
+  .page-title__header {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 54px;
+    line-height: normal;
+  }
+  .page-title__image {
+    display: none;
+  }
+  .page-title__descr {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    margin-top: 10px;
+  }
+  .page-title__text {
+    margin: 0;
+    margin-top: 20px;
+    text-align: left;
+  }
+  .page-title__images {
+    flex-direction: column;
+    align-items: flex-start;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-top: 52px;
+  }
+  .btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 53px;
+    grid-row: 3/4;
+  }
+  .page-title__bot {
+    display: none;
+  }
+  .page-title__image-block {
+    display: flex;
+    align-items: flex-end;
+  }
+  .page-title__item {
+    margin-top: 22px;
+    margin-left: 16px;
+  }
 }
 /*Блок 2. AGROBOT (титульная) END*/
 
@@ -538,11 +601,10 @@ span {
 /*Блок 5. Кредитование START*/
 .crediting {
   min-height: 1260px;
-  background: url("../image/crediting/crediting-bg.jpg") center center/cover
-    no-repeat;
+  background: url("../image/crediting/crediting-bg.jpg") no-repeat 50% / cover;
 }
 
-.container {
+.crediting__container {
   padding-left: 50px;
   padding-right: 50px;
   display: block;
@@ -566,7 +628,7 @@ span {
 }
 .crediting__title {
   color: var(--gray-2, #4f4f4f);
-  font-size: 96px;
+  font-size: 94px;
   font-family: "SF-Pro-Display-Heavy";
   font-weight: 900;
   text-transform: uppercase;
@@ -671,6 +733,74 @@ span {
   margin: 0 auto;
   margin-top: 65px;
 }
+
+@media (max-width: 768px) {
+
+}
+@media only screen and (max-width: 576px) {
+  /* Ваши стили для мобильных устройств */
+
+  .crediting {
+    min-height: 960px;
+    width: 100%;
+  }
+  .crediting__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .crediting__title {
+    font-size: 24px;
+  }
+  .crediting__title-block {
+    margin-left: 20px;
+  }
+  .crediting__descr {
+    margin-left: 20px;
+  }
+  .crediting__bank-logo {
+    width: 72px;
+    height: 24px;
+  }
+  .crediting__title-icon {
+    width: 24px;
+    height: 24px;
+    transform: translate(-17px, 45px);
+  }
+  .credidting__items {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 220px);
+    gap: 0px;
+    margin: 15px 0;
+  }
+  .crediting__item {
+    row-gap: 0px;
+    column-gap: 40px;
+  }
+  .crediting__subtitle {
+    font-size: 18px;
+  }
+  .crediting__item-descr {
+    font-size: 14px;
+  }
+  .crediting__item-period {
+    font-size: 14px;
+  }
+  .crediting__item-term {
+    font-size: 14px;
+    text-align: end;
+  }
+  .grid-elem-2 {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+  .crediting__item-note {
+    display: none;
+  }
+  .crediting__btn {
+    margin-top: 40px;
+  }
+}
+
 /*Блок 5. Кредитование END*/
 
 /*Блок 6. Наши партнеры START*/
@@ -949,127 +1079,4 @@ span {
   display: none;
 }
 /*Блок 9. Модальное окно END*/
-@media (max-width: 768px) {
-  .crediting {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 576px) {
-  /* Ваши стили для мобильных устройств */
-  .page-title {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .page-title__container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .page-title__wrapper {
-    width: 100%;
-  }
-  .page-title__header {
-    text-align: center;
-    font-size: 70px;
-    margin-top: 54px;
-    line-height: normal;
-  }
-  .page-title__image {
-    display: none;
-  }
-  .page-title__descr {
-    font-size: 14px;
-    line-height: 16px;
-    text-align: left;
-    margin-top: 10px;
-  }
-  .page-title__text {
-    margin: 0;
-    margin-top: 20px;
-    text-align: left;
-  }
-  .page-title__images {
-    flex-direction: column;
-    align-items: flex-start;
-    grid-row: 2/3;
-    grid-column: 1/2;
-    margin-top: 52px;
-  }
-  .btn {
-    display: block;
-    margin: 0 auto;
-    margin-top: 53px;
-    grid-row: 3/4;
-  }
-  .page-title__bot {
-    display: none;
-  }
-  .page-title__image-block {
-    display: flex;
-    align-items: flex-end;
-  }
-  .page-title__item {
-    margin-top: 22px;
-    margin-left: 16px;
-  }
 
-  .crediting {
-    min-height: 960px;
-    width: 100%;
-  }
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .crediting__title {
-    font-size: 24px;
-  }
-  .crediting__title-block {
-    margin-left: 20px;
-  }
-  .crediting__descr {
-    margin-left: 20px;
-  }
-  .crediting__bank-logo {
-    width: 72px;
-    height: 24px;
-  }
-  .crediting__title-icon {
-    width: 24px;
-    height: 24px;
-    transform: translate(-17px, 45px);
-  }
-  .credidting__items {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 220px);
-    gap: 0px;
-    margin: 15px 0;
-  }
-  .crediting__item {
-    row-gap: 0px;
-    column-gap: 40px;
-  }
-  .crediting__subtitle {
-    font-size: 18px;
-  }
-  .crediting__item-descr {
-    font-size: 14px;
-  }
-  .crediting__item-period {
-    font-size: 14px;
-  }
-  .crediting__item-term {
-    font-size: 14px;
-    text-align: end;
-  }
-  .grid-elem-2 {
-    grid-row: 2/3;
-    grid-column: 1/3;
-  }
-  .crediting__item-note {
-    display: none;
-  }
-  .crediting__btn {
-    margin-top: 40px;
-  }
-}
