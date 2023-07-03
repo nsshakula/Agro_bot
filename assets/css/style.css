@@ -68,21 +68,6 @@ h6 {
   font-size: inherit;
 }
 
-/* .wrapper {
-  padding-left: 50px;
-  padding-right: 50px;
-  display: block;
-  margin: 0 auto;
-  display: grid;
-  height: 100vh;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
-} */
-
 /* Стиль кнопки, можете отсюда брать и вставлять в свои секции + не забудьте hover START*/
 /* .btn {
   width: 200px;
@@ -469,7 +454,7 @@ span {
 
 .business-process__title {
   font-family: "SF-Pro-Display-Black";
-  font-size: 96px;
+  font-size: 94px;
   line-height: 110px;
   color: rgba(79, 79, 79, 1);
   text-transform: uppercase;
@@ -541,6 +526,12 @@ span {
   box-shadow: 3px 3px 20px #48b760;
   border: none;
   transition: 0.5s all;
+}
+
+@media screen and (max-width: 1280px) {
+  .business-process__content {
+    width: calc(100% - 200px);
+  }
 }
 /*Блок 4.  Как с нами работать END*/
 
@@ -698,7 +689,7 @@ span {
 
 .feedback__title {
   font-family: "SF-Pro-Display-Black";
-  font-size: 96px;
+  font-size: 94px;
   line-height: 110px;
   color: rgba(79, 79, 79, 1);
   text-transform: uppercase;
