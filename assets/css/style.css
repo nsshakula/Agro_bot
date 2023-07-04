@@ -135,7 +135,10 @@ h6 {
   display: flex;
   margin-top: 40px;
 }
-
+.nav1:hover
+{
+  text-decoration:underline;
+}
 .nav__item {
   list-style-type: none;
   margin-right: 50px;
@@ -147,7 +150,7 @@ h6 {
   font-family: SF Pro Display;
   line-height: 18px;
 }
-.nav__item:hover{
+.nav__list:hover{
   text-decoration:underline;
 }
 .logo{
@@ -175,6 +178,7 @@ h6 {
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 10px;
+  z-index:1;
 }
 .btn_header:hover {
   box-shadow: 3px 3px 20px #48b760;
@@ -186,7 +190,7 @@ h6 {
   position:absolute;
   padding-left: 1170px;
   padding-top:36px;
-  z-index:-1;
+  
 }
 .btn2_header
 {
@@ -853,12 +857,12 @@ span {
 .nav_footer {
   display: flex;
   margin-left: 180px;
-  margin-top:30px;
+  
 }
 .cardOfaSite {
   display:flex;
   margin-left: 180px;
-  margin-top:0px;
+  margin-top:100px;
 	color: #fff;
 	font-size: 18px;
 	font-family: SF Pro Display;
@@ -899,7 +903,7 @@ span {
 }
 
 /*Блок 8. footer END*/
-/*Блок 8. footer END*/
+
 
 /*Блок 9. Модальное окно START*/
   .overlay{
