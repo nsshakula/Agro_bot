@@ -109,90 +109,87 @@ h6 {
 /* Стиль подзаголовка END*/
 
 /*Блок 1. header START*/
+
 .header {
-  display: flex;
-  justify-content: space-between;
-  width: 1340px;
-  height: 80px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin: 0 auto;
+	padding: 30px 50px;
 }
 
 .nav__list {
-  display: flex;
-  margin-top: 40px;
+	display: flex;
+  gap:50px;
 }
-.nav1:hover
-{
-  text-decoration:underline;
-}
-.nav__item {
-  list-style-type: none;
-  margin-right: 50px;
-  padding-top: 20px;
-  cursor: pointer;
 
-  color: var(--gray-3, #828282);
-  font-size: 14px;
-  font-family: SF Pro Display;
-  line-height: 18px;
+.nav__item {
+	margin-right: 30px;
+	cursor: pointer;
+	color: var(--gray-3, #828282);
+	font-size: 14px;
+	font-family: SF Pro Display;
+	line-height: 18px;
 }
+
 .nav__item:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
+
 .logo {
-  display: flex;
-  width: 162px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  margin-left: 50px;
-  margin-top: 35px;
+	width: 162px;
+	height: 50px;
 }
 
 .btn_header {
-  width: 200px;
-  height: 48px;
-  border-radius: 500px;
-  border: none;
-  background: var(--2, linear-gradient(135deg, #48b760 0%, #6bb748 100%));
-  color: #fff;
-  text-align: center;
-  font-size: 14px;
-  font-family: "SF-Pro-Display-Regular";
-  font-weight: 800;
-  line-height: 18px;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-top: 10px;
-  z-index:1;
+	position: relative;
+	width: 180px;
+	height: 44px;
+	border-radius: 500px;
+	border: none;
+	background: var(--2, linear-gradient(135deg, #48b760 0%, #6bb748 100%));
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	font-family: 'SF-Pro-Display-Regular';
+	font-weight: 800;
+	line-height: 18px;
+	text-transform: uppercase;
+	cursor: pointer;
+	z-index: 1;
 }
+
 .btn_header:hover {
-  box-shadow: 3px 3px 20px #48b760;
-  border: none;
-  transition: 0.5s all;
+	box-shadow: 3px 3px 20px #48b760;
+	border: none;
+	transition: 0.5s all;
 }
+
 .header_buttons {
-  position: absolute;
-  padding-left: 1170px;
-  padding-top:36px;
-  
+	display: flex;
+	flex-direction: column;
+	align-items: end;
 }
+
 .btn2_header {
-  width: 164px;
-  height: 58px;
-  flex-shrink: 0;
-  border-radius: 0px 0px 22px 22px;
-  background: #4b6350;
-  cursor: pointer;
-  color: #fff;
-  text-align: center;
-  font-size: 14px;
-  font-family: SF Pro Display;
-  line-height: 18px;
+	position: absolute;
+	width: 164px;
+	top: 50px;
+	padding: 30px 0 10px;
+	border-radius: 0px 0px 22px 22px;
+	background: #4b6350;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	font-family: SF Pro Display;
+	line-height: 18px;
 }
-.btn2_header:hover{
-  box-shadow: 3px 3px 25px #719377;
-  border: none;
-  transition: 0.5s all;
+
+.btn2_header:hover {
+	box-shadow: 3px 3px 25px #719377;
+	border: none;
+	transition: 0.5s all;
 }
 /*Блок 1. header END*/
 
