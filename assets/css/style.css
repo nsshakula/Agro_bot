@@ -437,7 +437,10 @@ span {
 /*Блок 3. Товары и услуги END*/
 
 /*Блок 4.  Как с нами работать START*/
-
+.business-process__wrapper {
+  min-height: 100%;
+  min-width: 250px;
+}
 .business-process__body {
   background-image: url(../image/business-process_background.png);
   background-repeat: no-repeat;
@@ -454,7 +457,7 @@ span {
 
 .business-process__title {
   font-family: "SF-Pro-Display-Black";
-  font-size: 94px;
+  font-size: 5.8em;
   line-height: 110px;
   color: rgba(79, 79, 79, 1);
   text-transform: uppercase;
@@ -483,10 +486,15 @@ span {
 .item__row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .item__number {
   height: 110px;
+}
+
+.item__body {
+  width: 319px;
 }
 
 .item__subtitle {
@@ -502,6 +510,9 @@ span {
   line-height: 18px;
   color: rgba(130, 130, 130, 1);
   padding-top: 12px;
+}
+.item__text-mobile {
+  display: none;
 }
 
 .business-process__btn {
@@ -528,11 +539,247 @@ span {
   transition: 0.5s all;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1350px) {
   .business-process__content {
-    width: calc(100% - 200px);
+    width: calc(100% - 300px);
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .business-process__body {
+    padding: 50px 50px 30px;
+  }
+  .business-process__title {
+    font-size: 5em;
+  }
+  .business-process__content {
+    width: calc(100% - 170px);
+  }
+  .business-process__item {
+    padding-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .business-process__title {
+    font-size: 4.8em;
+  }
+  .business-process__content {
+    width: calc(100% - 100px);
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .business-process__title {
+    font-size: 4em;
+  }
+  .business-process__content {
+    width: calc(100% - 50px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .business-process__title-block {
+    height: 110px;
+  }
+  .business-process__title {
+    line-height: 85px;
+  }
+  .business-process__content {
+    margin: 20px auto 0;
+    width: calc(100% - 20px);
+  }
+  .business-process__col {
+    width: 400px;
+  }
+  .business-process__item {
+    padding-bottom: 40px;
+  }
+  .item__number {
+    height: 100px;
+  }
+  .item__number img {
+    height: 100%;
+  }
+  .item__body {
+    width: 300px;
+  }
+  .item__subtitle {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .item__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .business-process__title-block {
+    height: 75px;
+  }
+  .business-process__title {
+    font-size: 3em;
+    line-height: 60px;
+  }
+  .business-process__icon-logo {
+    height: 30px;
+    transform: translate(-21px, -17px);
+  }
+  .business-process__col {
+    width: 269px;
+  }
+  .business-process__item {
+    padding-bottom: 30px;
+  }
+  .item__row {
+    height: 110px;
+  }
+  .item__number {
+    height: 75px;
+  }
+  .item__subtitle {
+    font-size: 18px;
+  }
+  .item__text {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (max-width: 716px) {
+  .business-process__body {
+    background-image: none;
+  }
+  .business-process__title-block {
+    height: 63px;
+  }
+  .business-process__title {
+    font-size: 2.5em;
+    line-height: 50px;
+  }
+  .business-process__icon-logo {
+    height: 27px;
+    transform: translate(-21px, -15px);
+  }
+  .business-process__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .business-process__col {
+    width: 400px;
+  }
+
+  .item__number {
+    height: 110px;
+  }
+  .item__subtitle {
+    line-height: 26px;
+  }
+  .item__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .business-process__title {
+    font-size: 2.2em;
+  }
+  .business-process__col {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .business-process__col {
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .business-process__title {
+    font-size: 2em;
+  }
+  .business-process__col {
+    width: 100%;
+  }
+  .item__row {
+    justify-content: initial;
+  }
+  .item__number {
+    padding-right: 10px;
+  }
+  .item__body {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .business-process__body {
+    padding: 50px 30px 30px;
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .business-process__body {
+    padding: 50px 16px 30px;
+  }
+  .business-process__title-block {
+    height: 51px;
+  }
+  .business-process__title {
+    font-size: 1.5em;
+    line-height: 36px;
+  }
+  .business-process__icon-logo {
+    height: 24px;
+    transform: translate(-23px, -10px);
+  }
+  .business-process__item {
+    padding-bottom: 40px;
+  }
+  .item__text {
+    padding-top: 10px;
+  }
+  .item__text {
+    display: none;
+  }
+  .item__text-mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .business-process__content {
+    width: 100%;
+  }
+  .business-process__btn {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 359px) {
+  .business-process__body {
+    width: 328px;
+    height: 100vh;
+  }
+  .business-process__title {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 250px) {
+  .business-process__wrapper {
+    height: 100%;
+    width: 328px;
+    overflow-y: scroll;
+  }
+  .business-process__title {
+    font-size: 1em;
+  }
+}
+
 /*Блок 4.  Как с нами работать END*/
 
 /*Блок 5. Кредитование START*/
