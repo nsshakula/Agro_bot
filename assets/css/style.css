@@ -109,6 +109,8 @@ h6 {
 /* Стиль подзаголовка END*/
 
 /*Блок 1. header START*/
+
+/*Mobile version START*/
 .header_showmobile
 {
   display:none;
@@ -124,6 +126,11 @@ h6 {
   {
     width: 116px;
     height: 36px;
+  }
+  .logo_position
+  {
+    display:flex;
+    transform:translate(-30px, -5px);
   }
   .nav__item 
   {
@@ -162,7 +169,7 @@ and (max-device-width : 480px)
   .menu_text
   {
     position:absolute;
-    margin-left:270px;
+    margin-left:155px;
     margin-top:8px;
 
     color: var(--gray-2, #4F4F4F);
@@ -170,21 +177,21 @@ and (max-device-width : 480px)
     font-size: 14px;
     font-family: "SF Pro Display";
     font-style: normal;
-    font-weight: 500;
+    font-weight:500;
     line-height: 18px;
   }
 
   .menu_header
   {
     display:flex;
-    margin-left:316px;
+    margin-left:200px;
     margin-top:5px;
     width: 28px;
     height: 28px;
   }
 
 }
-
+/*Mobile version END*/
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -578,6 +585,150 @@ span {
   border-radius: 20px;
   background: #fff;
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
+}
+.goods_text_mobile
+{
+  display:none;
+}
+.goods_items_mobile
+{
+  display:none;
+}
+.goods_Small_icon
+{
+  display:none;
+}
+
+@media screen and (min-device-width : 320px) and (max-width: 480px) {
+
+  .goods_and_services-icon
+  {
+    
+    height: 24px;
+    transform: translate(-23px, 52px);
+  }
+  .goods_and_services-block
+  {
+    height: 51px;
+    margin-left: 1px;
+  }
+  .goods__title
+  {
+    width:236px;
+    height: 36px;
+
+    color: var(--gray-2, #4F4F4F);
+    font-family: "SF-Pro-Display-Heavy";
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+  .goods_text
+  {
+    display:none;
+  }
+  .goods_text_mobile
+  {
+    display: flex;
+    width: 328px;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-top: 35px;
+    transform: translate(-23px, 20px);
+    color: var(--gray-3, #828282);
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .goods__items
+  {
+    display:none;
+    visibility: hidden;
+  }
+  .goods_items_mobile
+  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    height:620px;
+    
+  }
+  .goods__grid-elem-1_mobile
+  {
+    width: 328px;
+    height: 102px;
+    transform: translate(-30px, 30px);
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+  }
+  #goodsIcon_mobile
+  {
+    width: 62px;
+    height: 62px;
+    margin-left: 15px;
+    margin-top: 25px;
+  }
+  #semenaText_mobile
+  {
+    color: var(--gray-3, #828282);
+    font-family: "SF Pro Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    margin-left: 121px;
+    transform: translateY(-85px);
+  }
+  #explainingString_mobile
+  {
+    color: var(--gray-4, #BDBDBD);
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    transform: translate(120px,-85px);
+  }
+  .goods_Small_icon
+  {
+    display:flex;
+    width: 24px;
+    height: 24px;
+    margin-left: 284px;
+    transform: translateY(-53px);
+  }
+  .goods__grid-elem-2_mobile
+  {
+    width: 328px;
+    height: 102px;
+    transform: translate(-360px, 155px);
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+  }
+  .goods__grid-elem-3_mobile
+  {
+    width: 328px;
+    height: 102px;
+    transform: translate(-690px, 280px);
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+  }
+  .goods__grid-elem-4_mobile
+  {
+    width: 328px;
+    height: 102px;
+    transform: translate(-1018px, 410px);
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+  }
 }
 /*Блок 3. Товары и услуги END*/
 
