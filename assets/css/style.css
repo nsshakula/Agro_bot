@@ -151,7 +151,7 @@ h6 {
 	color: #fff;
 	text-align: center;
 	font-size: 14px;
-	font-family: 'SF-Pro-Display-Regular';
+	font-family: "SF-Pro-Display-Regular";
 	font-weight: 800;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -360,6 +360,10 @@ span {
 /*Блок 2. AGROBOT (титульная) END*/
 
 /*Блок 3. Товары и услуги START*/
+.products
+{
+  padding-left:50px;
+}
 .goods_and_services {
   background-image: url(../image/business-process_background.png);
   background-repeat: no-repeat;
@@ -464,7 +468,7 @@ span {
   color: #fff;
   text-align: center;
   font-size: 14px;
-  font-family: SF Pro Display;
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 800;
   line-height: 18px;
@@ -971,43 +975,45 @@ span {
 
   color: #828282;
   font-size: 14px;
-  font-family: SF Pro Display;
+  font-family: "SF Pro Display";
   line-height: 18px;
 }
 .name_agrobot1 {
   font-weight: bolder;
   color: #828282;
   font-size: 14px;
-  font-family: SF Pro Display;
+  font-family: "SF Pro Display";
   line-height: 18px;
 }
 .name_agrobot2 {
   font-weight: bolder;
   color: #a2a2a2;
   font-size: 14px;
-  font-family: SF Pro Display;
+  font-family: "SF Pro Display";
   line-height: 18px;
 }
-.nav_footer {
+/*.nav_footer {
   display: flex;
-  margin-left: 180px;
-  margin-top: 30px;
+  height:100px;
+  margin-top: 130px;
 }
+*/
 .cardOfaSite {
   display: flex;
-  margin-left: 180px;
-  margin-top:100px;
+  margin-left: 100px;
+  margin-top:60px;
 	color: #fff;
 	font-size: 18px;
-	font-family: SF Pro Display;
+	font-family: "SF Pro Display";
 	font-weight: 500;
 	line-height: 18px;
+  height:40px;
 }
 .cardOfaSite:hover {
   text-decoration: underline;
 }
 .footer__block {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .footer__media {
@@ -1021,13 +1027,16 @@ span {
 .social_media_text {
   color: #fff;
   font-size: 18px;
-  font-family: SF Pro Display;
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
   margin-left: 302px;
 }
-
+.nav_footer
+{
+  margin-top:130px;
+}
 .footer {
   height: 322px;
   display: flex;
