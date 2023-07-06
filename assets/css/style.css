@@ -109,6 +109,81 @@ h6 {
 /* Стиль подзаголовка END*/
 
 /*Блок 1. header START*/
+.header_showmobile
+{
+  display:none;
+}
+@media screen and (min-device-width : 320px) and (max-width: 480px) {
+
+  .nav__list
+  {
+    visibility: hidden;
+    display:none;
+  }
+  .logo
+  {
+    width: 116px;
+    height: 36px;
+  }
+  .nav__item 
+  {
+    visibility: hidden;
+    display:none;
+  }
+  .btn_header
+  {
+    visibility: hidden;
+    display:none;
+  }
+  .header_buttons 
+  {
+    visibility: hidden;
+    display:none;
+  }
+  .btn2_header
+  {
+    visibility: hidden;
+    display:none;
+  }
+
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+{
+  .header_showmobile
+  {
+    display:flex;
+  }
+  .menu_text:hover
+  {
+    text-decoration: underline;
+  }
+  .menu_text
+  {
+    position:absolute;
+    margin-left:270px;
+    margin-top:8px;
+
+    color: var(--gray-2, #4F4F4F);
+    text-align: right;
+    font-size: 14px;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .menu_header
+  {
+    display:flex;
+    margin-left:316px;
+    margin-top:5px;
+    width: 28px;
+    height: 28px;
+  }
+
+}
 
 .header {
 	display: flex;
@@ -191,6 +266,7 @@ h6 {
 	border: none;
 	transition: 0.5s all;
 }
+
 /*Блок 1. header END*/
 
 /*Блок 2. AGROBOT (титульная) START*/
@@ -360,6 +436,7 @@ span {
 /*Блок 2. AGROBOT (титульная) END*/
 
 /*Блок 3. Товары и услуги START*/
+
 .products
 {
   padding-left:50px;
