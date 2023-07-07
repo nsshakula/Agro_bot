@@ -11,13 +11,20 @@
   <body>
         <!--Блок 1. header START-->
         <header class="header">
-      <div class="logo_position">
-        <img
-          class="logo"
-          src="assets/image/header/AlterLogo.svg"
-          alt="лого"
-        />
-      </div>
+          <div class="header__wrapper">
+            <div class="logo_position">
+              <img
+                class="logo"
+                src="assets/image/header/AlterLogo.svg"
+                alt="лого"
+              />
+            </div>
+            <div class="header_showmobile">
+              <p class="menu_text">Меню</p>
+              <img class="menu_header" src="assets/image/header/menu_icon.svg" alt="иконка меню"/>
+            </div>
+          </div>
+
       <div>
         <nav class="nav1">
           <ul class="nav__list">
@@ -50,7 +57,7 @@
               </p>
 
             </div>
-            <button data-modal="thanks" class="btn">свяжитесь с нами</button>
+            <button data-modal="thanks" class="page-title__btn btn">свяжитесь с нами</button>
             <div class="page-title__bot">
               <img
                 class="page-title__bot-img"
@@ -107,6 +114,7 @@
         </section>
         <!--Блок 3. Товары и услуги-->
         <section class="products">
+          <div class="goods_body">
             <div class="goods_and_services-block">
               <img
                 class="goods_and_services-icon"
@@ -120,6 +128,7 @@
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an <br>
               unknown printer took a galley of type and scrambled it to make a type specimen book.
             </div>
+            <div class="goods_text_mobile">Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry</div>
 
             <div class="goods__items">
                 <span class="goods__grid-elem-1">
@@ -146,6 +155,32 @@
                   <p id="explainingString">(Разъяснительная строка)</p>
                   <button id="btn_goods"><span class="text_button">Создать запрос</span></button>
                 </span>
+            </div>
+            <div class="goods_items_mobile">
+              <span class="goods__grid-elem-1_mobile">
+                <img id ="goodsIcon_mobile" src="assets/image/goods and services/harvest 1.svg" alt="иконка с семенами"/>
+                <img class = "goods_Small_icon" src="assets/image/goods and services/Frame2.svg"/>
+                <p id="semenaText_mobile">Семена</p>
+                <p id="explainingString_mobile">(Разъяснительная строка)</p>
+                </span>
+                <span class="goods__grid-elem-2_mobile">
+                  <img id ="goodsIcon_mobile" src="assets/image/goods and services/agriculture 1.svg" alt="иконка с агрокультурой"/>
+                  <img class = "goods_Small_icon" src="assets/image/goods and services/Frame2.svg"/>
+                  <p id="semenaText_mobile">СЗР</p>
+                  <p id="explainingString_mobile">(Разъяснительная строка)</p>
+                  </span>
+                  <span class="goods__grid-elem-3_mobile">
+                    <img id ="goodsIcon_mobile" src="assets/image/goods and services/lightning-electric-energy 1.svg" alt="иконка энергетическая молния"/>
+                    <img class = "goods_Small_icon" src="assets/image/goods and services/Frame2.svg"/>
+                    <p id="semenaText_mobile">Удобрения</p>
+                    <p id="explainingString_mobile">(Разъяснительная строка)</p>
+                    </span>
+                    <span class="goods__grid-elem-4_mobile">
+                      <img id ="goodsIcon_mobile" src="assets/image/goods and services/tractor 1.svg" alt="иконка трактора"/>
+                      <img class = "goods_Small_icon" src="assets/image/goods and services/Frame2.svg"/>
+                      <p id="semenaText_mobile">Техника</p>
+                      <p id="explainingString_mobile">(Разъяснительная строка)</p>
+                      </span>
             </div>
           </div>
         </section>
@@ -293,7 +328,7 @@
           </section>
     <!--Блок 5. Кредитование-->
         <section class="crediting">
-          <div class="container">
+          <div class="crediting__container">
             <div class="crediting-title">
               <div class="crediting__title-block">
                 <img
@@ -358,7 +393,51 @@
           </div>
         </section>
         <!--Блок 6. Наши партнеры-->
-        <section class="partners"></section>
+        <section class="partners">
+          <div class="partners__body">
+            <div class="partners__title-block">
+              <h2 class="partners__title">Наши партнеры</h2>
+              <img class="partners__icon-logo" src="assets/image/icon/title_logo.png" alt="логотип" />
+            </div>
+            <p class="partners_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            
+            <div class="container_partners">
+              <img
+                class="partner__icon-logo"
+                src="./assets/image/partners/sovkombank.png"
+                alt="sovkombank" />
+                <img
+                class="partner__icon-logo"
+                src="./assets/image/partners/otkritiebank.png"
+                alt="otkritie" />
+                <img
+                class="partner__icon-logo"
+                src="./assets/image/partners/tinkoffbank.png"
+                alt="tinkoff" />
+                <img
+                class="partner__icon-logo"
+                src="./assets/image/partners/vtbbank.png"
+                alt="vtb" />
+                <img
+                class="partner__icon-logo"
+                src="./assets/image/partners/alfabank.png"
+                alt="alfa" />
+                <img
+                class="partner__icon-logo"
+                src="./assets/image/partners/gazprombank.png"
+                alt="gazprom" />
+                <img
+                class="partner__icon-logo"
+                src="./assets/image/partners/sberbank.png"
+                alt="sber" />
+                <img
+                class="partner__icon-logo"
+                src="./assets/image/partners/rosselkhozbank.png"
+                alt="rosselkhoz" />
+              </div>
+              <button data-modal="thanks" class="btn">Свяжитесь с нами</button>
+            </div>
+        </section>
         <!--Блок 7. Обратная связь-->
         <section class="feedback">
           <div class="feedback__body">
@@ -456,9 +535,16 @@
 							<span class="name_agrobot2">AGROBOT</span>
 						</p>
 					</span>
+          <div class="mobFoot">
+          <div class="textFooter_mobile">Все авторские права принадлежат <br><span class="name_agrobot1">AGROBOT</span>
+            2020 год. Правила<br>
+            использования торговой марки
+            <br />
+            <span class="name_agrobot2">AGROBOT</span>
+          </div>
+        </div>
 				</div>
-				<div>
-          <div>
+        <div class="card_mobile">
 					<h3 class="cardOfaSite">Карта сайта</h3>
         </div>
 					<nav class="nav_footer">
@@ -475,7 +561,22 @@
 							</div>
 						</ul>
 					</nav>
-				</div>
+
+          <nav class="nav_footer_mobile">
+						<ul class="nav__list_mobile">
+							<div class="mob_grid1">
+								<li class="nav__item_mobile nav__item_mobile_selected">Главная</li>
+								<li class="nav__item_mobile">Товары и Услуги</li>
+								<li class="nav__item_mobile">Как с нами работать?</li>
+							</div>
+							<div class="mob_grid2">
+								<li class="nav__item_mobile">Партнёры</li>
+								<li class="nav__item_mobile">Кредитование</li>
+								<li class="nav__item_mobile">Контакты</li>
+							</div>
+						</ul>
+					</nav>
+				
 
 				<div class="footer__block">
 					<h3 class="social_media_text">Социальные сети</h3>
@@ -498,7 +599,6 @@
 				</div>
 			</footer>
     </div>
-    
     <!-- Модальное окно -->
     <div class="overlay">
       <div class="modal" id="thanks">
