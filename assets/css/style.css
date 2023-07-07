@@ -1317,11 +1317,31 @@ span {
   font-weight: 500;
   line-height: 26px;
 }
-.containers_logo {
+.container_partners {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 40px;
   padding-top: 30px;
+}
+.btn {
+  width: 200px;
+  height: 48px;
+  border-radius: 500px;
+  border: none;
+  background: var(--2, linear-gradient(135deg, #48B760 0%, #6BB748 100%));
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'SF-Pro-Display-Regular';
+  font-weight: 800;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer; 
+}
+.btn:hover {
+  box-shadow: 3px 3px 20px #48B760;
+  border: none;
+  transition: 0.5s all;
 }
 
 /*Блок 6. Наши партнеры END*/
