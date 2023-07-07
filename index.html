@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!--Блок 1. header START-->
+        <!--Блок 1. header START-->
         <header class="header">
       <div class="logo_position">
         <img
@@ -151,8 +151,7 @@
         </section>
     <!--Блок 4.  Как с нами работать-->
     <section class="business-process">
-      <div class="business-process__wrapper">
-        <div class="business-process__body">
+              <div class="business-process__body">
           <div class="business-process__title-block">
             <h2 class="business-process__title">Как с нами работать</h2>
             <img
@@ -291,8 +290,7 @@
             Свяжитесь с нами
           </button>
         </div>
-      </div>
-    </section>
+          </section>
     <!--Блок 5. Кредитование-->
         <section class="crediting">
           <div class="container">
@@ -372,8 +370,8 @@
                 alt="логотип"
               />
             </div>
-            <div class="feedback__container">
-              <form class="feedback__form" id="form">
+                <div class="feedback__container">
+                  <form class="feedback__form" id="form">
                 <input
                   class="input__field"
                   type="text"
@@ -383,12 +381,13 @@
                   required
                   />
                 <input
-                  class="input__field"
-                  type="tel"
-                  placeholder="Номер телефона*"
-                  name="userPhone"
-                  id="phone"
-                  required
+                class="input__field"
+                type="tel"
+                placeholder="Телефон* xxx-xxx-xxxx"
+                name="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                id="phone"
+                required
                 />
                 <input
                   class="input__field"
@@ -411,12 +410,11 @@
                   src="https://yandex.ru/map-widget/v1/?um=constructor%3Abb7fffd1282803eec26475cfd6ffe8de1d36ebdb2f6ad71cdb34bf4fd8cfb2e9&amp;source=constructor"
                 ></iframe>
               </div>
-            </div>
-            <div class="feedback__button-wrapper">
+              <div class="feedback__button-wrapper">
               <form class="feedback__checkbox">
                 <input type="checkbox" name="personal" id="personal" checked />
                 <label for="personal"
-                  >Я даю согласие на обработку своих
+                  >Я даю согласие на обработку своих 
                   <a href="#">персональных данных</a></label
                 >
               </form>
@@ -428,7 +426,8 @@
               >
                 Отправить
               </button>
-            </div>
+              </div>
+          </div>
             <div class="feedback__bot">
               <a href="#">
                 <img
