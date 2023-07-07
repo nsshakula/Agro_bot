@@ -13,3 +13,23 @@
 ![jquery-horizontal (1)](https://github.com/nsshakula/Agro_bot/assets/134269662/d478f63f-4621-47bf-8d48-a390c9ddb1b6)
 
 # Наша команда:
+<h3>
+  <a href="https://github.com/nsshakula">
+    <img alt="Natali" src="https://img.shields.io/badge/-Daria-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
+<h3>
+  <a href="https://github.com/SardanaMir)">
+    <img alt="" src="https://img.shields.io/badge/-Veronika-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
+<h3>
+  <a href="https://github.com/MokhovaElizaveta">
+    <img alt="Elizaveta" src="https://img.shields.io/badge/-Lyuba-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
+<h3>
+  <a href="https://github.com/asel305">
+    <img alt="Asrl" src="https://img.shields.io/badge/-Lyuba-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
