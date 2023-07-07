@@ -109,89 +109,6 @@ h6 {
 /* Стиль подзаголовка END*/
 
 /*Блок 1. header START*/
-
-/*Mobile version START*/
-.header_showmobile
-{
-  display:none;
-}
-@media screen and (min-device-width : 320px) and (max-width: 480px) {
-
-  .nav__list
-  {
-    visibility: hidden;
-    display:none;
-  }
-  .logo
-  {
-    width: 116px;
-    height: 36px;
-  }
-  .logo_position
-  {
-    display:flex;
-    transform:translate(-30px, -5px);
-  }
-  .nav__item 
-  {
-    visibility: hidden;
-    display:none;
-  }
-  .btn_header
-  {
-    visibility: hidden;
-    display:none;
-  }
-  .header_buttons 
-  {
-    visibility: hidden;
-    display:none;
-  }
-  .btn2_header
-  {
-    visibility: hidden;
-    display:none;
-  }
-
-}
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px)
-{
-  .header_showmobile
-  {
-    display:flex;
-  }
-  .menu_text:hover
-  {
-    text-decoration: underline;
-  }
-  .menu_text
-  {
-    position:absolute;
-    margin-left:155px;
-    margin-top:8px;
-
-    color: var(--gray-2, #4F4F4F);
-    text-align: right;
-    font-size: 14px;
-    font-family: "SF Pro Display";
-    font-style: normal;
-    font-weight:500;
-    line-height: 18px;
-  }
-
-  .menu_header
-  {
-    display:flex;
-    margin-left:200px;
-    margin-top:5px;
-    width: 28px;
-    height: 28px;
-  }
-
-}
-/*Mobile version END*/
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -273,7 +190,121 @@ and (max-device-width : 480px)
 	border: none;
 	transition: 0.5s all;
 }
+/*Mobile version START*/
+@media screen and (max-width: 1200px){
+  .nav__list {
+    gap: 10px;
+    align-items: center;
+  }
+  .nav__item {
+    margin-right: 0;
+    margin-left: 20px;
+    
+  }
+}
+@media (max-width: 991px){
+  .header_buttons{
+    display: none;
+  }
+}
+.header_showmobile
+{
+  display:none;
+}
+@media screen and (min-device-width : 320px) and (max-width: 480px) {
+  .header{
+    display: block;
+  }
+  .header__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__list
+  {
+    visibility: hidden;
+    display:none;
+  }
+  .logo
+  {
+    width: 116px;
+    height: 36px;
+  }
+  .logo_position
+  {
+    display:flex;
+    transform:translate(-30px, -5px);
+  }
+  .nav__item 
+  {
+    visibility: hidden;
+    display:none;
+  }
+  .btn_header
+  {
+    visibility: hidden;
+    display:none;
+  }
+  .header_buttons 
+  {
+    visibility: hidden;
+    display:none;
+  }
+  .btn2_header
+  {
+    visibility: hidden;
+    display:none;
+  }
 
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+{
+  .header_showmobile
+  {
+    display:flex;
+  }
+  .menu_text:hover
+  {
+    text-decoration: underline;
+  }
+  .menu_text
+  {
+    position:absolute;
+    margin-left:155px;
+    margin-top:8px;
+
+    color: var(--gray-2, #4F4F4F);
+    text-align: right;
+    font-size: 14px;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight:500;
+    line-height: 18px;
+  }
+  .header{
+    padding: 20px 20px 20px 45px;
+  }
+  .menu_header  {
+    display:flex;
+    margin-left:0;
+    margin-top:5px;
+    width: 28px;
+    height: 28px;
+  }
+  .menu_text{
+    position: relative; 
+    margin-left:0;
+  }
+  .nav1{
+    display: none;
+  }
+  .header_buttons{
+    display: none;
+  }
+}
+
+/*Mobile version END*/
 /*Блок 1. header END*/
 
 /*Блок 2. AGROBOT (титульная) START*/
@@ -286,10 +317,7 @@ and (max-device-width : 480px)
 .page-title__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 450px 50px 100px;
-}
-.page-title__wrapper {
-  width: 624px;
+  grid-template-rows: 450px 50px 1fr;
 }
 .btn {
   grid-row: 2/3;
@@ -342,6 +370,7 @@ span {
   width: 319px;
 }
 .page-title__images {
+  margin-top: 40px;
   grid-column-start: 2;
   grid-row: 1/5;
   display: flex;
@@ -365,7 +394,6 @@ span {
 
 .page-title__bot {
   grid-row: 3/4;
-  margin-top: 159px;
   display: flex;
   align-items: center;
 }
@@ -378,11 +406,63 @@ span {
   line-height: 18px;
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 1280px){
+  .page-title__container{
+    grid-template-rows: 350px 50px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .page-title__header{
+    font-size: 100px;
+    margin-top: 100px;
+  }
+  .page-title__bot-img{
+    width: 7vw;
+  }
+  .page-title__bot{
+    width: 400px;
+  }
+  .page-title__image{
+    width: 15vw;
+  }
+  .page-title__item {
+    font-size: 15px;
+  }
 }
-@media only screen and (max-width: 576px) {
-  /* Ваши стили для мобильных устройств */
+
+@media (max-width: 991px){
+  .page-title__container{
+    grid-template-rows: 280px 70px 1fr;
+
+  }
+  .page-title__header {
+    font-size: 80px;
+    margin-top: 50px;
+    line-height: 119px;
+  }
+  .page-title__bot{
+    width: 300px;
+  }
+  .page-title__image{
+    width: 13vw;
+  }
+  .page-title__btn{
+    margin-top: 10px;
+  }
+  .page-title__item{
+    font-size: 12px;
+  }
+  .page-title__text{
+    margin-bottom: 10px;
+  }
+  .page-title__bot-text{
+    font-size: 10px;
+  }
+  .page-title__descr{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
   .page-title {
     padding-left: 20px;
     padding-right: 20px;
@@ -390,15 +470,11 @@ span {
   .page-title__container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .page-title__wrapper {
-    width: 100%;
+    grid-template-rows: 1fr 203px 100px;
   }
   .page-title__header {
-    text-align: center;
     font-size: 70px;
-    margin-top: 54px;
+    margin-top: 34px;
     line-height: normal;
   }
   .page-title__image {
@@ -422,7 +498,7 @@ span {
     grid-column: 1/2;
     margin-top: 52px;
   }
-  .btn {
+  .page-title__btn {
     display: block;
     margin: 0 auto;
     margin-top: 53px;
@@ -438,6 +514,29 @@ span {
   .page-title__item {
     margin-top: 22px;
     margin-left: 16px;
+  }
+}
+@media (max-width: 576px){
+  .page-title__item{
+    margin-top: 0;
+  }
+  .page-title__images{
+    margin-top: 0;
+    justify-content: center;
+  }
+  .page-title__btn{
+    margin-top: 0;
+  }
+}
+@media (max-width: 320px){
+  .page-title__header{
+    font-size: 60px;
+  }
+  .page-title__wrapper{
+    width: 280px;
+  }
+  .page-title__text{
+    width: 280px;
   }
 }
 /*Блок 2. AGROBOT (титульная) END*/
@@ -1214,14 +1313,82 @@ span {
   margin-top: 65px;
 }
 
-@media (max-width: 768px) {
 
+@media screen and (max-width: 1439px){
+  .crediting{
+    min-height: 1100px;
+  }
 }
-@media only screen and (max-width: 576px) {
-  /* Ваши стили для мобильных устройств */
 
+@media screen and (max-width: 1200px){
+  .crediting__bank-logo{
+    width: 19vw;
+  }
+  .crediting__title{
+    font-size: 75px;
+  }
+  .credidting__items{
+    column-gap: 20px;
+  }
+  .crediting__title-icon {
+    transform: translate(-35px, 112px);
+}
+}
+
+@media screen and (max-width: 991px){
+  .crediting__title{
+    font-size: 70px;
+  }
+  .crediting__title-icon {
+    transform: translate(-35px, 91px);
+  }
+  .crediting__title{
+    font-size: 54px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .crediting{
+    min-height: 920px;
+  }
+  .crediting-title {
+    column-gap: 37px;
+  }
+  .crediting__bank-logo{
+    transform: translateY(25px);
+  }
+  .credidting__items{
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+  .crediting__item-period, .crediting__item-term{
+    font-size: 13px;
+  }
+  .crediting__item-descr{
+    font-size: 13px;
+  }
+  .crediting__item-note{
+    font-size: 10px;
+  }
+  .crediting__subtitle{
+    font-size: 17px;
+  }
+  .crediting__item {
+    row-gap: 0px;
+    column-gap: 10px;
+  }
+  .grid-elem-1{
+    row-gap: 20px;
+  }
+  .grid-elem-2{
+    grid-template-rows: repeat(4, 40px);
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 576px){
   .crediting {
-    min-height: 960px;
+    min-height: 900px;
     width: 100%;
   }
   .crediting__container {
@@ -1229,7 +1396,10 @@ span {
     padding-right: 16px;
   }
   .crediting__title {
-    font-size: 24px;
+    font-size: 29px;
+  }
+  .crediting-title{
+    grid-template-columns: 250px 100px;
   }
   .crediting__title-block {
     margin-left: 20px;
@@ -1238,8 +1408,8 @@ span {
     margin-left: 20px;
   }
   .crediting__bank-logo {
-    width: 72px;
-    height: 24px;
+    width: 16vw;
+    transform: translateY(13px);
   }
   .crediting__title-icon {
     width: 24px;
@@ -1247,14 +1417,25 @@ span {
     transform: translate(-17px, 45px);
   }
   .credidting__items {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 220px);
     gap: 0px;
     margin: 15px 0;
+  }
+  .crediting__descr{
+    font-size: 10px;
+  }
+  .credidting__items{
+    row-gap: 20px;
   }
   .crediting__item {
     row-gap: 0px;
     column-gap: 40px;
+  }
+  .grid-elem-1{
+    row-gap: 20px;
+  }
+  .grid-elem-2{
+    grid-template-rows: repeat(4, 40px);
+    row-gap: 20px;
   }
   .crediting__subtitle {
     font-size: 18px;
@@ -1278,6 +1459,14 @@ span {
   }
   .crediting__btn {
     margin-top: 40px;
+  }
+}
+@media screen and (max-width: 320px){
+  .crediting__bank-logo {
+    display: none;
+  }
+  .crediting__descr{
+    grid-row: 2/3;
   }
 }
 
@@ -1583,5 +1772,25 @@ span {
 #thanks {
   display: none;
 }
-/*Блок 9. Модальное окно END*/
 
+@media screen and (max-width: 1439px){
+}
+
+@media (max-width: 1200px){
+}
+
+@media (max-width: 992px){
+}
+
+@media (max-width: 768px){
+}
+
+@media screen and (max-width: 576px){
+  .modal{
+    width: 200px;
+  }
+  .modal__descr{
+    font-size: 20px;
+  }
+}
+/*Блок 9. Модальное окно END*/
