@@ -1789,12 +1789,12 @@ span {
   .footer__media 
   {
     display:flex;
-    transform: translate(-977px, 90px);
+    transform: translate(-923px, 90px);
   }
   .social_media_text
   {
     display:flex;
-    transform:translate(-972px,100px);
+    transform:translate(-920px,100px);
   }
   .nav_footer_mobile
   {
@@ -1815,7 +1815,7 @@ span {
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
-    transform: translate(-435px,70px);
+    transform: translate(-385px,70px);
     width: 150px;
   }
   .nav__item_mobile_selected
