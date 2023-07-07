@@ -1714,6 +1714,7 @@ span {
 .nav_footer
 {
   margin-top:130px;
+  transform: translate(70px, -25px);
 }
 .footer {
   height: 322px;
@@ -1732,6 +1733,22 @@ span {
 .card_mobile
 {
   display:none;
+}
+.card_desktop_wrapper
+{
+  display:flex;
+  transform:translate(185px,60px);
+}
+.card_desktop
+{
+  color: #FFF;
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  width:100px;
 }
 @media only screen and (min-device-width : 320px) and (max-width: 480px) {
   .footer{
@@ -1832,6 +1849,10 @@ span {
     font-weight: 400;
     line-height: 18px;
     transform: translate(-360px,72px);
+  }
+  .card_desktop
+  {
+    display:none;
   }
 }
 
