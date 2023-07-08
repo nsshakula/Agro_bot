@@ -1737,7 +1737,7 @@ span {
 .card_desktop_wrapper
 {
   display:flex;
-  transform:translate(185px,60px);
+  transform:translate(160px,60px);
 }
 .card_desktop
 {
