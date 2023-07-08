@@ -1500,6 +1500,42 @@ span {
   border: none;
   transition: 0.5s all;
 }
+@media screen and (min-width: 577) {
+  .partners_text_mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .partners__body {
+    min-height: 700px;
+    width: 100%;
+  }
+  .partners_text {
+    display: none;
+  }
+  .partners__title-block { 
+    grid-template-columns: 249px 51px;
+    margin-left: 20px;
+  }
+  .partners__title {
+    font-size: 24px;
+  }
+  .partners__icon-logo {
+    width: 16vw;
+    transform: translateY(13px);
+  }
+  .partners__icon-logo {
+    width: 24px;
+    height: 24px;
+    transform: translate(-17px, 45px);
+  }
+  .container_partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    padding-top: 30px;
+  }
+}
 
 
 /*Блок 6. Наши партнеры END*/
