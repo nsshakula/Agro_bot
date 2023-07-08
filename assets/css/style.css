@@ -1455,16 +1455,12 @@ span {
 }
 
 .partners__icon-logo {
+  max-width: 100%;
   transform: translate(-36px, -34px);
 }
 .partners_text {
   display: flex;
-<<<<<<< HEAD
- flex-direction: row;
-=======
-  /* width: 1340px; */
   flex-direction: row;
->>>>>>> a0bcb78e4fe1187022ae539e475616b353c20098
   flex-shrink: 0;
   padding-top: 30px;
   padding-left: 20px;
@@ -1482,12 +1478,7 @@ span {
   grid-gap: 40px;
   padding-top: 30px;
 }
-<<<<<<< HEAD
 .partners_btn {
-=======
-
-.partners__btn {
->>>>>>> a0bcb78e4fe1187022ae539e475616b353c20098
   display: block;
   margin: 72px auto;
   width: 200px;
@@ -1503,15 +1494,9 @@ span {
   line-height: 18px;
   text-transform: uppercase;
   cursor: pointer;
-<<<<<<< HEAD
 } 
 .partners_btn:hover {
   box-shadow: 3px 3px 20px #48B760;
-=======
-}
-.btn:hover {
-  box-shadow: 3px 3px 20px #48b760;
->>>>>>> a0bcb78e4fe1187022ae539e475616b353c20098
   border: none;
   transition: 0.5s all;
 }
