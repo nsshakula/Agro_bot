@@ -1288,7 +1288,7 @@ span {
   padding: 100px 50px 0;
 }
 
-.partnersk__title-block {
+.partners__title-block {
   height: 130px;
   margin: 0 0 30px 36px;
 }
@@ -1306,10 +1306,11 @@ span {
 }
 .partners_text {
   display: flex;
-  width: 1340px;
-  flex-direction: row;
+ flex-direction: row;
   flex-shrink: 0;
   padding-top: 30px;
+  padding-left: 20px;
+
   color: rgba(130, 130, 130, 1);
   font-size: 18px;
   font-family: "SF-Pro-Display-Regular";
@@ -1323,7 +1324,9 @@ span {
   grid-gap: 40px;
   padding-top: 30px;
 }
-.btn {
+.partners_btn {
+  display: block;
+  margin: 72px auto;
   width: 200px;
   height: 48px;
   border-radius: 500px;
@@ -1336,9 +1339,9 @@ span {
   font-weight: 800;
   line-height: 18px;
   text-transform: uppercase;
-  cursor: pointer; 
-}
-.btn:hover {
+  cursor: pointer;
+} 
+.partners_btn:hover {
   box-shadow: 3px 3px 20px #48B760;
   border: none;
   transition: 0.5s all;
