@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!--Блок 1. header START-->
+        <!--Блок 1. header START-->
         <header class="header">
-      <div class="logo_position">
-        <img
-          class="logo"
-          src="assets/image/header/AlterLogo.svg"
-          alt="лого"
-        />
-      </div>
-      <div class="header_showmobile">
-        <img class=" menu_header" src="assets/image/header/menu_icon.svg" alt="иконка меню"/>
-        <p class="menu_text">Меню</p>
-      </div>
+          <div class="header__wrapper">
+            <div class="logo_position">
+              <img
+                class="logo"
+                src="assets/image/header/AlterLogo.svg"
+                alt="лого"
+              />
+            </div>
+            <div class="header_showmobile">
+              <p class="menu_text">Меню</p>
+              <img class="menu_header" src="assets/image/header/menu_icon.svg" alt="иконка меню"/>
+            </div>
+          </div>
+
       <div>
         <nav class="nav1">
           <ul class="nav__list">
@@ -54,7 +57,7 @@
               </p>
 
             </div>
-            <button data-modal="thanks" class="btn">свяжитесь с нами</button>
+            <button data-modal="thanks" class="page-title__btn btn">свяжитесь с нами</button>
             <div class="page-title__bot">
               <img
                 class="page-title__bot-img"
@@ -183,8 +186,7 @@
         </section>
     <!--Блок 4.  Как с нами работать-->
     <section class="business-process">
-      <div class="business-process__wrapper">
-        <div class="business-process__body">
+              <div class="business-process__body">
           <div class="business-process__title-block">
             <h2 class="business-process__title">Как с нами работать</h2>
             <img
@@ -323,11 +325,10 @@
             Свяжитесь с нами
           </button>
         </div>
-      </div>
-    </section>
+          </section>
     <!--Блок 5. Кредитование-->
         <section class="crediting">
-          <div class="container">
+          <div class="crediting__container">
             <div class="crediting-title">
               <div class="crediting__title-block">
                 <img
@@ -434,7 +435,7 @@
                 src="./assets/image/partners/rosselkhozbank.png"
                 alt="rosselkhoz" />
               </div>
-              <button data-modal="thanks" class="partners_btn">Свяжитесь с нами</button>
+              <button data-modal="thanks" class="btn">Свяжитесь с нами</button>
             </div>
         </section>
         <!--Блок 7. Обратная связь-->
@@ -448,8 +449,8 @@
                 alt="логотип"
               />
             </div>
-            <div class="feedback__container">
-              <form class="feedback__form" id="form">
+                <div class="feedback__container">
+                  <form class="feedback__form" id="form">
                 <input
                   class="input__field"
                   type="text"
@@ -459,12 +460,13 @@
                   required
                   />
                 <input
-                  class="input__field"
-                  type="tel"
-                  placeholder="Номер телефона*"
-                  name="userPhone"
-                  id="phone"
-                  required
+                class="input__field"
+                type="tel"
+                placeholder="Телефон* xxx-xxx-xxxx"
+                name="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                id="phone"
+                required
                 />
                 <input
                   class="input__field"
@@ -487,12 +489,11 @@
                   src="https://yandex.ru/map-widget/v1/?um=constructor%3Abb7fffd1282803eec26475cfd6ffe8de1d36ebdb2f6ad71cdb34bf4fd8cfb2e9&amp;source=constructor"
                 ></iframe>
               </div>
-            </div>
-            <div class="feedback__button-wrapper">
+              <div class="feedback__button-wrapper">
               <form class="feedback__checkbox">
                 <input type="checkbox" name="personal" id="personal" checked />
                 <label for="personal"
-                  >Я даю согласие на обработку своих
+                  >Я даю согласие на обработку своих 
                   <a href="#">персональных данных</a></label
                 >
               </form>
@@ -504,7 +505,8 @@
               >
                 Отправить
               </button>
-            </div>
+              </div>
+          </div>
             <div class="feedback__bot">
               <a href="#">
                 <img
@@ -533,8 +535,18 @@
 							<span class="name_agrobot2">AGROBOT</span>
 						</p>
 					</span>
+          <div class="mobFoot">
+          <div class="textFooter_mobile">Все авторские права принадлежат <br><span class="name_agrobot1">AGROBOT</span>
+            2020 год. Правила<br>
+            использования торговой марки
+            <br />
+            <span class="name_agrobot2">AGROBOT</span>
+          </div>
+        </div>
 				</div>
+        <div class="card_mobile">
 					<h3 class="cardOfaSite">Карта сайта</h3>
+        </div>
 					<nav class="nav_footer">
 						<ul class="nav__list">
 							<div>
@@ -546,6 +558,21 @@
 								<li class="nav__item">Партнёры</li>
 								<li class="nav__item">Кредитование</li>
 								<li class="nav__item">Контакты</li>
+							</div>
+						</ul>
+					</nav>
+
+          <nav class="nav_footer_mobile">
+						<ul class="nav__list_mobile">
+							<div class="mob_grid1">
+								<li class="nav__item_mobile nav__item_mobile_selected">Главная</li>
+								<li class="nav__item_mobile">Товары и Услуги</li>
+								<li class="nav__item_mobile">Как с нами работать?</li>
+							</div>
+							<div class="mob_grid2">
+								<li class="nav__item_mobile">Партнёры</li>
+								<li class="nav__item_mobile">Кредитование</li>
+								<li class="nav__item_mobile">Контакты</li>
 							</div>
 						</ul>
 					</nav>
@@ -572,7 +599,6 @@
 				</div>
 			</footer>
     </div>
-    
     <!-- Модальное окно -->
     <div class="overlay">
       <div class="modal" id="thanks">
