@@ -472,7 +472,7 @@ span {
   .page-title__text {
     margin: 0;
     margin-top: 20px;
-    text-align: left;
+    text-align: center;
   }
   .page-title__images {
     flex-direction: column;
@@ -480,11 +480,14 @@ span {
     grid-row: 2/3;
     grid-column: 1/2;
     margin-top: 52px;
+    /* margin-top: 0; */
+    justify-content: center;
+    align-items: center;
   }
   .page-title__btn {
     display: block;
-    margin: 0 auto;
-    margin-top: 53px;
+    margin: 53px auto;
+    /* margin-top: 53px; */
     grid-row: 3/4;
   }
   .page-title__bot {
@@ -498,17 +501,28 @@ span {
     margin-top: 22px;
     margin-left: 16px;
   }
+  .page-title__item{
+    margin-top: 0;
+  }
 }
-@media (max-width: 576px) {
-  .page-title__item {
+@media (max-width: 576px){
+  .page-title__wrapper{
+    display: block;
+    margin: 0 auto;
+  }
+  .page-title__item{
     margin-top: 0;
   }
   .page-title__images {
     margin-top: 0;
-    justify-content: center;
+    /* display: flex; */
+    align-items: flex-start;
   }
-  .page-title__btn {
-    margin-top: 0;
+  .page-title__text{
+    text-align: left;
+  }
+  .page-title__btn{
+    margin-top: 53px;
   }
 }
 @media (max-width: 320px) {
@@ -1293,14 +1307,17 @@ span {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .crediting {
+@media screen and (max-width: 767px){
+  .crediting{
     min-height: 920px;
   }
   .crediting-title {
     column-gap: 37px;
   }
-  .crediting__bank-logo {
+  .crediting__title{
+    font-size: 39px;
+  }
+  .crediting__bank-logo{
     transform: translateY(25px);
   }
   .credidting__items {
@@ -1442,7 +1459,7 @@ span {
 }
 .partners_text {
   display: flex;
-  width: 1340px;
+  /* width: 1340px; */
   flex-direction: row;
   flex-shrink: 0;
   padding-top: 30px;
@@ -1459,7 +1476,10 @@ span {
   grid-gap: 40px;
   padding-top: 30px;
 }
-.btn {
+
+.partners__btn {
+  display: block;
+  margin: 72px auto;
   width: 200px;
   height: 48px;
   border-radius: 500px;
@@ -1479,6 +1499,7 @@ span {
   border: none;
   transition: 0.5s all;
 }
+
 
 /*Блок 6. Наши партнеры END*/
 
