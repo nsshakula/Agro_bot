@@ -1858,10 +1858,17 @@ span {
   line-height: 18px;
   margin-left: 302px;
 }
+@media screen and (max-width: 1200px)
+{.nav__item {
+    margin-right: 0;
+    margin-left: 20px;
+    width: 100px;
+}
+}
 .nav_footer
 {
   margin-top:130px;
-  transform: translate(70px, -25px);
+  transform:translate(-100px, -25px);
 }
 .footer {
   height: 322px;
@@ -1881,7 +1888,8 @@ span {
 .card_desktop_wrapper
 {
   display:flex;
-  transform:translate(160px,60px);
+  margin-left: 140px;
+  margin-top: 65px;
 }
 .card_desktop
 {
