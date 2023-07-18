@@ -1914,7 +1914,7 @@ span {
 }
 .nav_footer {
   margin-top: 130px;
-  transform: translate(70px, -25px);
+  transform: translate(-100px, -25px);
 }
 .footer {
   height: 322px;
@@ -1933,7 +1933,8 @@ span {
 }
 .card_desktop_wrapper {
   display: flex;
-  transform: translate(160px, 60px);
+  margin-left: 140px;
+  margin-top: 65px;
 }
 .card_desktop {
   color: #fff;
@@ -1945,6 +1946,13 @@ span {
   line-height: 18px;
   width: 100px;
 }
+@media screen and (max-width: 1200px) {
+  .nav__item {
+    margin-right: 0;
+    margin-left: 20px;
+    width: 100px;
+  }
+}
 @media only screen and (min-device-width: 320px) and (max-width: 480px) {
   .footer {
     width: 360px;
@@ -1954,6 +1962,7 @@ span {
   }
   .card_mobile {
     display: flex;
+    transform: translate(-133px, 0px);
   }
   .cardOfaSite {
     color: #fff;
@@ -1997,14 +2006,15 @@ span {
   }
   .footer__media {
     display: flex;
-    transform: translate(-923px, 90px);
+    transform: translate(-1060px, 90px);
   }
   .social_media_text {
     display: flex;
-    transform: translate(-920px, 100px);
+    transform: translate(-1057px, 100px);
   }
   .nav_footer_mobile {
     display: block;
+    transform: translate(-135px, 0px);
   }
   .nav__list_mobile {
     display: grid;
