@@ -2,6 +2,8 @@
 
 Мы представляем вам лендинг-страницу закупочной площадки для сельхозпредприятий Agrobot.
 
+ссылка на сайт: https://nsshakula.github.io/Agro_bot/
+
 На данном сайте вы можете ознакомиться с товарами и услугами сельхоз предприятий и с условиями кредитования. Также связаться с компанией для получения консультации.
 
 ![image](https://github.com/nsshakula/Agro_bot/assets/134269662/5ef8c371-1031-48d8-be56-b47ac6ed469b)
@@ -13,6 +15,7 @@
 ![jquery-horizontal (1)](https://github.com/nsshakula/Agro_bot/assets/134269662/d478f63f-4621-47bf-8d48-a390c9ddb1b6)
 
 # Наша команда:
+
 <h3>
   <a href="https://github.com/nsshakula">
     <img alt="Natali" src="https://img.shields.io/badge/-Natali-black?style=for-the-badge&logo=github&logoColor=white" />
